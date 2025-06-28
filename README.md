@@ -28,6 +28,7 @@ add(sustain);
 override public function update(elapsed:Float):Void
 {
     super.update(elapsed);
+    sustain.update(elapsed);
     sustain.height = yourHeightImplementation; // Your height logic here
 }
 ```

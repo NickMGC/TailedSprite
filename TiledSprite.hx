@@ -23,10 +23,19 @@ class TiledSprite extends FlxSprite {
 		return super.getScreenBounds(newRect, camera).setSize(frameWidth * Math.abs(scale.x), height);
 	}
 
+	public function setTail(name:String):Void {
+		tailAnimName = name;
+		updateTail();
+	}
+
 	override function update(elapsed:Float):Void {
 		super.update(elapsed);
 
 		//TODO: maybe add controls for the tail's animation? not sure
+		updateTail();
+	}
+
+	function updateTail():Void {
 		_tailFrame = frames.frames[animation.getByName(tailAnimName).frames[animation.curAnim.curFrame]].copyTo(_tailFrame);
 		_tailFrame.sourceSize.y -= 2;
 		_tailFrame.frame.height -= 2;

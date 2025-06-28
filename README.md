@@ -17,7 +17,7 @@ sustain.animation.add("tail", [1], 25);
 sustain.animation.play("body");
 
 // Specify the animation to use for the tail
-sustain.tailAnimName = "tail";
+sustain.setTail("tail");
 
 add(sustain);
 

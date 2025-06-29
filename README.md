@@ -9,7 +9,6 @@ Here is a basic example of how to use `TailedSprite` in your project:
 
 ```haxe
 var sustain:TailedSprite = new TailedSprite();
-
 sustain.loadGraphic("assets/sustain.png", true, 50, 50);
 sustain.animation.add("body", [0], 25);
 sustain.animation.add("tail", [1], 25);
@@ -28,6 +27,6 @@ override public function update(elapsed:Float):Void
 {
     super.update(elapsed);
     sustain.update(elapsed);
-    sustain.height = yourHeightImplementation; // Your height logic here
+    sustain.height = ...; // Your height logic here
 }
 ```

@@ -12,7 +12,7 @@ using flixel.util.FlxColorTransformUtil;
 /*
  * something something made by nickngc
 */
-class TiledSprite extends FlxSprite {
+class TailedSprite extends FlxSprite {
 	public var tailAnimName:String;
 
 	var _tailFrame:FlxFrame;

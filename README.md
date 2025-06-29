@@ -1,5 +1,7 @@
 # Tailed Sprite
-A specialized `TailedSprite` class for the [HaxeFlixel](https://haxeflixel.com/) game engine, designed specifically for rendering sustain notes in rhythm games. This class extends `FlxSprite` to provide tiling capabilities, making it easy to create dynamically-sized sustain notes. This class also supports animated sprites, flipping and rotation.
+A specialized `TailedSprite` class for the [HaxeFlixel](https://haxeflixel.com/) game engine, designed specifically for rendering sustain notes in rhythm games.
+<br/>
+This class extends `FlxSprite` to provide tiling capabilities, making it easy to create dynamically-sized sustain notes. This class also supports animated sprites, flipping and rotation.
 
 The frame gap fix was made by [RapperGF](https://github.com/rappergf)
 

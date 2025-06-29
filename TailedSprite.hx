@@ -32,10 +32,14 @@ class TailedSprite extends FlxSprite {
 		super.update(elapsed);
 
 		//TODO: maybe add controls for the tail's animation? not sure
-		updateTail();
+		if (_tailFrame != null) {
+			updateTail();
+		}
 	}
 
 	function updateTail():Void {
+		if (animation.getByName(tailAnimName) == null) return;
+
 		_tailFrame = frames.frames[animation.getByName(tailAnimName).frames[animation.curAnim.curFrame]].copyTo(_tailFrame);
 		_tailFrame.sourceSize.y -= 2;
 		_tailFrame.frame.height -= 2;

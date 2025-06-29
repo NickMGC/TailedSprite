@@ -1,14 +1,14 @@
-# Tiled Sprite
-A specialized `TiledSprite` class for the [HaxeFlixel](https://haxeflixel.com/) game engine, designed specifically for rendering sustain notes in rhythm games. This class extends `FlxSprite` to provide tiling capabilities, making it easy to create dynamically-sized sustain notes. This class also supports animated sprites, flipping and rotation.
+# Tailed Sprite
+A specialized `TailedSprite` class for the [HaxeFlixel](https://haxeflixel.com/) game engine, designed specifically for rendering sustain notes in rhythm games. This class extends `FlxSprite` to provide tiling capabilities, making it easy to create dynamically-sized sustain notes. This class also supports animated sprites, flipping and rotation.
 
 The frame gap fix was made by [RapperGF](https://github.com/rappergf)
 
 ## Usage
 
-Here is a basic example of how to use `TiledSprite` in your project:
+Here is a basic example of how to use `TailedSprite` in your project:
 
 ```haxe
-var sustain:TiledSprite = new TiledSprite();
+var sustain:TailedSprite = new TailedSprite();
 
 sustain.loadGraphic("assets/sustain.png", true, 50, 50);
 sustain.animation.add("body", [0], 25);
